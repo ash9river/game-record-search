@@ -26,7 +26,6 @@ function Card() {
       },
     ],
   };
-  console.log(apiKey);
 
   useEffect(() => {
     async function findVision() {
