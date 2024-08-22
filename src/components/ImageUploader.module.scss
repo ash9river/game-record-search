@@ -1,0 +1,28 @@
+.my-h1 {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 52px;
+  color: #33333b;
+  text-align: center;
+}
+.my-h2 {
+  max-width: 800px;
+  margin: 8px auto 0;
+  line-height: 32px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #47474f;
+  text-align: center;
+}
+.img-container {
+  border-radius: 3;
+  border: 1px dashed #33333b;
+  width: 80vw;
+  height: 80vh;
+  margin: auto;
+  margin-top: 5vh;
+  background-color: #d8d8d8;
+}
+.img-container:focus-visible {
+  //outline: 0;
+}
