@@ -68,12 +68,10 @@ function Card() {
         }
 
         let nxtUrl = `?player1=${
-          paramsArray.length > 0 ? paramsArray[0] : "입력이잘못되었어요"
+          paramsArray.length > 0 ? paramsArray[0] : "?%20??"
         }&player2=${
-          paramsArray.length > 1 ? paramsArray[1] : "입력이잘못되었어요"
-        }&player3=${
-          paramsArray.length > 2 ? paramsArray[2] : "입력이잘못되었어요"
-        }`;
+          paramsArray.length > 1 ? paramsArray[1] : "?%20??"
+        }&player3=${paramsArray.length > 2 ? paramsArray[2] : "?%20??"}`;
 
         setIsSubmit(false);
         setImageFile("");
