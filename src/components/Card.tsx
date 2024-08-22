@@ -56,6 +56,7 @@ function Card() {
           console.log(item);
 
           if (item.length === 1) continue;
+          if (item.includes("?")) continue;
           if (item === "EMPTY" || item === "CLOSE") continue;
           if (item === "전체" || item === "플레이어" || item === "정보")
             continue;
