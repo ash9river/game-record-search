@@ -52,18 +52,26 @@ function Card() {
 
         const arr = textAnnotations[0].description.split("\n");
         let paramsArray = [];
-        for (const item of arr) {
+        for (let item of arr) {
           console.log(item);
 
           if (item.length === 1) continue;
           if (item.includes("?")) continue;
+          if (item.includes("|")) {
+            item = item.replace(/\|/g, " ");
+          }
           if (item === "EMPTY" || item === "CLOSE") continue;
           if (item === "전체" || item === "플레이어" || item === "정보")
             continue;
           if (item.includes("전체 플레이어 정보")) continue;
+          let checkSil = false;
           for (let i = 1; i < 25; ++i) {
-            if (item === `실험체${i}`) continue;
+            if (item === `실험체${i}`) {
+              checkSil = true;
+              break;
+            }
           }
+          if (checkSil) continue;
           paramsArray.push(item);
         }
 
