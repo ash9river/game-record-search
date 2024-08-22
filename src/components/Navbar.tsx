@@ -14,7 +14,7 @@ function Navbar() {
     <button
       onClick={goHome}
       style={{
-        width: "7vw",
+        width: "64px",
         height: "100vh",
         paddingBlock: "0",
         paddingInline: "0",

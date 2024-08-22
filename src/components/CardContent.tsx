@@ -1,12 +1,12 @@
 function CardContent({ player }: { player: string | null }) {
-  const playername = player ? player : "입력이잘못되었어요";
+  const playername = player ? player : "notfound";
 
   return (
     <iframe
       src={`https://dak.gg/er/players/${playername}`}
       title={playername}
       style={{
-        width: "31vw",
+        width: "calc(50vw - 33px)",
         height: "99vh",
       }}
     />
