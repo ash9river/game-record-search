@@ -64,6 +64,13 @@ function Card() {
           if (item === "전체" || item === "플레이어" || item === "정보")
             continue;
           if (item.includes("전체 플레이어 정보")) continue;
+          if (
+            item === "ww" ||
+            item === "xx" ||
+            item === "www" ||
+            item === "xxx"
+          )
+            continue;
           let checkSil = false;
           for (let i = 1; i < 25; ++i) {
             if (item === `실험체${i}`) {

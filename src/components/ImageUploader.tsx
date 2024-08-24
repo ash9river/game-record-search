@@ -108,7 +108,7 @@ function ImageUploader() {
 
   return (
     <div className={styles["img-container"]} onPaste={handlePaste}>
-      <h1 className={styles["my-h1"]}>스크린샷 붙여넣기</h1>
+      <h1 className={styles["my-h1"]}>앙평 검거기</h1>
       <h2 className={styles["my-h2"]}>
         캡쳐 버튼 누르고 캡쳐한 후, 회색 박스 영역을 클릭해서 CTRL + V
       </h2>
